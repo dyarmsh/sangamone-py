@@ -15,11 +15,13 @@ def convert():
     print(line1)
     print(line2)
 
-f1 = open("py/q3/inConvert.txt",'r')
-f2 = open("py/q3/inConvert.txt",'r')
+f1 = open("sangamone/q3/inConvert.txt",'r')
+temp = f1.readlines()
+len1 = len(temp)
+f1 = open("sangamone/q3/inConvert.txt",'r')
 
-for i in range(0,len(f1.readlines())):
-    contents = f2.readline()
+for i in range(0,len1):
+    contents = f1.readline()
     
     contents = contents.split(" ")
     contents[4] = contents[4].replace("\n","")
